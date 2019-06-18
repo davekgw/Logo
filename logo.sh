@@ -13,7 +13,7 @@ echo "          ╚═╝                     "
 echo "[01]-[Termux-Theme]"
 echo "[BB]-[BaCk]"
 echo ""
-echo -n "Theme:~#" " 
+echo -n Theme:~#" " 
 read zaki
 #Logo
 if [ "$zaki" = "01" ] || [ "$zaki" = "1" ];
@@ -32,7 +32,7 @@ clear
                  echo " Done"
                  rm -rf $dir/logo
                  sleep 2
-	             $PREFIX/share/Log/logo.sh
+	             $PREFIX/share/Logo/logo.sh
 			fi
 cd $dir
 gem install lolcat
