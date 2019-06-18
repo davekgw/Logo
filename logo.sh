@@ -1,5 +1,5 @@
 #!usr/bin/bash
-clear
+
 #colour
 R='\033[1;31m'
 B='\033[0;34m'
@@ -25,8 +25,9 @@ echo $R"[$G"01"$R]$C"-"$R["$W"Termux$C"-"$W"Theme"$R]"
 echo $R"[$G"BB"$R]$B"-"$R["$W"BaCk$R]"
 echo "               "
 echo -n $W"Theme:~$R"#" " 
+read zaki
 #Logo
-elif [ "$zaki" = "01" ] || [ "$zaki" = "1" ];
+if [ "$zaki" = "01" ] || [ "$zaki" = "1" ];
 then
 clear
            if [ -e $PREFIX/bin/lolcat ];
