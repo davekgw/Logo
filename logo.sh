@@ -11,7 +11,7 @@ Y2='\033[1;33m'
 
 #variables
 dir=/data/data/com.termux/files/home
-E=/data/data/com.termux/files/usr/share/Logo/logo
+E=/data/data/com.termux/files/usr/share/Log/logo
 
 clear
 echo
@@ -24,7 +24,7 @@ echo "          ╚═╝                     "
 echo $R"[$G"01"$R]$C"-"$R["$W"Termux$C"-"$W"Theme"$R]"
 echo $R"[$G"BB"$R]$B"-"$R["$W"BaCk$R]"
 echo "               "
-echo -n $W"EasY_HaCk:~$R"#" " 
+echo -n $W"Theme:~$R"#" " 
 #Logo
 elif [ "$zaki" = "01" ] || [ "$zaki" = "1" ];
 then
@@ -32,29 +32,29 @@ clear
            if [ -e $PREFIX/bin/lolcat ];
 				then
 				 cd $dir
-                 rm -rf $dir/.Logo
-                 wget https://raw.githubusercontent.com/davekgw/Logo/master/logo
+                 rm -rf $dir/.Log
+                 wget https://raw.githubusercontent.com/davekgw/Log/master/logo
                  clear
                  cd
                  read -p " Put Your Name Logo : " logo
-                 sed "s/zaki/$logo/" $dir/logo > $dir/.Logo
+                 sed "s/zaki/$logo/" $dir/logo > $dir/.Log
                  figlet -f big "   $logo" | lolcat
                  echo " Done"
                  rm -rf $dir/logo
                  sleep 2
-	             $PREFIX/share/Logo/logo.sh
+	             $PREFIX/share/Log/logo.sh
 			fi
 cd $dir
 gem install lolcat
-rm -rf $dir/.Logo
-wget https://raw.githubusercontent.com/davekgw/Logo/master/logo
+rm -rf $dir/.Log
+wget https://raw.githubusercontent.com/davekgw/Log/master/logo
 clear
 cd
 #read logo
 read -p " Put Your Name Logo : " logo
-sed "s/zaki/$logo/g" $dir/logo > $dir/.Logo
+sed "s/zaki/$logo/g" $dir/logo > $dir/.Log
 figlet -f big "   $logo" | lolcat
 echo " Done"
 rm -rf $dir/logo
 sleep 1
-$PREFIX/share/Logo/logo.sh
+$PREFIX/share/Log/logo.sh
